@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* verilen width asla asilmiyor */
+}
+
+body {
+    background-color: #E4DFDB;
+}
+
+.header,
+.maindiv,
+.aboutDiv,
+.projectsDiv {
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+}
+
+.mainDiv h1,
+.projectsDiv h1,
+.aboutDiv h1 {
+    margin-top: 75px;
+    font-size: 80px;
+}
+
+h1,
+h2,
+h3 {
+    color: #060606;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    background: rgba(232, 227, 223, 0.575);
+    overflow: hidden;
+    margin-top: 30px;
+    /* position: sticky; */
+    position: fixed;
+    top: 0;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    font-size: 25px;
+    color: #060606;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    background-color: #151515;
+    color: #ddd;
+}
+
+
+/* Header */
+
+.header {
+    height: 100vh;
+    background: url("https://wallpaperaccess.com/full/498482.jpg");
+    background-size: cover;
+    background-position: center center;
+    margin-top: 100px;
+}
+
+.headLine {
+    font-size: 50px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+
+/* div.header:after {
+    content: '';
+    display: block;
+    clear: both;
+} */
+
+
+/* Skills */
+
+.skills-table {
+    width: 100%;
+    height: 100vh;
+}
+
+table {
+    width: -webkit-fill-available;
+    border-collapse: collapse;
+    margin: 50px;
+}
+
+div.mainDiv div.skills-table table thead tr th:first-child {
+    border: transparent;
+    background: transparent;
+}
+
+div.mainDiv div.skills-table table tbody tr.title-items:last-child td:first-child {
+    border-bottom: transparent;
+}
+
+div.mainDiv div.skills-table table tbody tr.title-items:first-child td {
+    border-top: transparent;
+}
+
+div.mainDiv div.skills-table tbody tr.title-items td:first-child {
+    border-left: transparent;
+}
+
+div.mainDiv div.skills-table tbody tr.title-items td:nth-child(1) {
+    border-top: transparent;
+}
+
+div.mainDiv div.skills-table tbody tr.title-items td:nth-child(2) {
+    text-align: center;
+    color: #CEBEB5;
+    border-right: transparent;
+    border-bottom: transparent;
+}
+
+div.mainDiv div.skills-table tbody tr.title-items td:nth-child(3) {
+    text-align: center;
+    color: #DBB999;
+    border-right: transparent;
+    border-bottom: transparent;
+}
+
+div.mainDiv div.skills-table tbody tr.title-items td:last-child {
+    text-align: center;
+    color: #9B9896;
+    border-right: transparent;
+    border-bottom: transparent;
+}
+
+div.mainDiv div.skills-table tbody tr.title-item:last-child td {
+    border-bottom: transparent;
+}
+
+table th {
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    clip-path: polygon( 0% 20px, /* top left */
+    0px 0%, /* top left */
+    calc(100% - 20px) 0%, /* top right */
+    100% 0px, /* top right */
+    100% calc(100% - 50px), /* bottom right */
+    calc(100% - 50px) 100%, /* bottom right */
+    50px 100%, /* bottom left */
+    0 calc(100% - 50px)/* bottom left */
+    );
+}
+
+table th:nth-child(2) {
+    background: linear-gradient(rgba(234, 212, 199, 0.822), rgba(187, 169, 158, 0.822));
+    border-right: 2px solid #ccc;
+}
+
+table th:nth-child(3) {
+    background: linear-gradient(rgb(245, 215, 187), rgb(206, 170, 136));
+    border-right: 2px solid #ccc;
+}
+
+table th:last-child {
+    background: linear-gradient(to bottom, rgba(226, 224, 224, 0.336), rgba(75, 75, 75, 0.486));
+}
+
+td {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 25px;
+    border: 2px solid #ccc;
+    white-space: nowrap;
+}
+
+div.mainDiv:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+div.mainDiv.skills-table:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* About me  */
+
+.aboutDiv {
+    /* background: url("https://i.pinimg.com/originals/fb/90/05/fb9005466c5696b842a9407260c8d90d.jpg"); */
+    background: url("https://hdwallpaperim.com/wp-content/uploads/2017/08/23/458542-triangle-space-geometry-galaxy-748x382.jpg");
+    background-size: cover;
+    /* background-position: center center; */
+    /* height: 100vh; */
+}
+
+.about-prg {
+    margin: 100px 50px;
+    height: 75vh;
+    display: inline-block;
+    background-image: linear-gradient(to bottom, rgba(75, 75, 75, 0.486), rgba(226, 224, 224, 0.336));
+}
+
+.about-prg h1 {
+    font-size: 80px;
+}
+
+.about-prg p {
+    /* text-indent: 20px; */
+    float: left;
+    font-size: 20px;
+    color: #0E0F22;
+    text-align: justify;
+    padding: 14px 16px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+div.aboutDiv:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* Projects */
+
+.projectsDiv {
+    height: 100vh;
+}
+
+.skill-column {
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+
+.skill-columns {
+    float: left;
+    width: 27%;
+    text-align: center;
+    margin: 50px;
+}
+
+.skill-columns:first-child {
+    border: 5px solid rgb(61, 61, 61);
+    border-radius: 25px;
+}
+
+.skill-columns:first-child h3 {
+    background-color: rgb(61, 61, 61);
+}
+
+.skill-columns:nth-child(2) {
+    border: 5px solid grey;
+    border-radius: 25px;
+}
+
+.skill-columns:nth-child(2) h3 {
+    background-color: grey;
+}
+
+.skill-columns:last-child {
+    border: 5px solid rgb(180, 180, 180);
+    border-radius: 25px;
+}
+
+.skill-columns:last-child h3 {
+    background-color: rgb(180, 180, 180);
+}
+
+.skill-columns:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.skill-columns h2 {
+    padding: 15px;
+    height: 10vh;
+    margin: 0;
+}
+
+.skill-columns img {
+    width: 100%;
+    height: 30vh;
+}
+
+.skill-columns p {
+    padding: 15px;
+    font-size: 15px;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.skill-columns h3 {
+    padding: 10px;
+    height: 5vh;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+div.projectsDiv:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+@media screen and (min-width:601px) and (max-width:992px) {
+    .headLine {
+        font-size: 50px;
+    }
+    .about-prg h1 {
+        font-size: 50px;
+        margin-top: 0;
+    }
+    .about-prg p {
+        font-size: 2vw;
+        float: left;
+        padding: 5px;
+    }
+    .skill-columns {
+        margin: 20px;
+        float: left;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .headLine {
+        font-size: 15px;
+    }
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .about-prg h1 {
+        font-size: 50px;
+        padding: 10px;
+    }
+    .about-prg p {
+        font-size: 2vw;
+        float: left;
+    }
+    div.mainDiv.skills-table {
+        width: 100vw;
+    }
+    .skill-columns {
+        margin: 20px;
+        float: left;
+        width: 50%;
+    }
+}
