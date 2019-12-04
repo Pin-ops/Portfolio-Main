@@ -245,7 +245,7 @@
     
     .skill-columns {
         float: left;
-        width: 27%;
+        width: 27.5%;
         text-align: center;
         margin: 50px;
     }
@@ -338,7 +338,7 @@
         }
     }
     
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:716px) {
         .navbar {
             margin: 0;
         }
@@ -351,7 +351,9 @@
         .headLine {
             top: 90%;
         }
-        .headLine h1,
+        .headLine h1 {
+            font-size: 50px;
+        }
         .mainDiv h1,
         .about-prg h1,
         .projectsDiv h1 {
@@ -372,8 +374,15 @@
         .skill-columns h2 {
             font-size: 20px
         }
-        .skill-columns {
+        .skill-columns img {
+            width: 45vw;
+            height: 20vh;
+        }
+        .skill-columns p,
+        .skill-columns h3 {
             font-size: 15px;
+        }
+        .skill-columns {
             margin: 20px;
             float: left;
             width: 50%;
